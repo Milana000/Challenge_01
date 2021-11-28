@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header start */
+#header {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#header p {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Inconsolata;
+}
+
+/* Header end */
+
+/* Main start */
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .image-holder {
+    width: 45%;
+    margin-top: 45px;
+}
+
+.main .image-holder img {
+    width: 100%;
+}
+
+.main .text-holder {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.main .text-holder h1 {
+    font-family: Space Mono;
+    font-weight: 700;
+    font-size: 45px;
+    color: #333333;
+}
+
+.main .text-holder p {
+    width: 80%;
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+
+.main .text-holder button {
+    max-width: 190px;
+    width: 100%;
+    background-color: #333333;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.main .text-holder button a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Space Mono;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Main end */
+
+
+/* Footer start */
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    color: #BDBDBD;
+    margin-top: 150px;
+}
+
+/* Footer end */
+
+@media screen and (max-width:780px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .image-holder {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .main .text-holder {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main .text-holder p {
+        width: 100%;
+    }
+}
